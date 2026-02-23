@@ -1,0 +1,36 @@
+.nav-container {
+  background-color: black;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  a {
+    color: white;
+    text-decoration: none;
+    font-family:"Montserrat";
+    }
+
+}
+
+.nav-cart{
+  display: flex;
+  align-items: center;
+  width: 10%;
+}
+
+.nav-secciones{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
+.cart{
+  color: white;
+}
+
+svg {
+  width: 24px;
+  height: 24px;
+}
