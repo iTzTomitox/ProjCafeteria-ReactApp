@@ -9,10 +9,9 @@ const Item = ({prod}) => {
             </div>
             <div className="item-body">
                 <h3 className="item-title">{name}</h3>
-                <p className="item-desc">{descripcion}</p>
                 <div className="item-meta">
-                    <span className="item-price">${price}</span>
-                    <span className="item-stock">{stock} en stock</span>
+                    <span className="item-price">${price},00</span>
+                    <button>Ver mas</button>
                 </div>
             </div>
         </div>

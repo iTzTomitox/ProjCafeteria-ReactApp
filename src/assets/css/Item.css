@@ -45,12 +45,6 @@
   font-size:1.05rem;
 }
 
-.item-desc{
-  margin:0;
-  color:#555;
-  font-size:0.9rem;
-  flex:1 0 auto;
-}
 
 .item-meta{
   display:flex;
