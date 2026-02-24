@@ -48,3 +48,16 @@ export const getProducts = ()=> {
         }, 2000);
     })
 }
+
+export const getItem = (id)=> {
+    return new Promise ((resolve, reject)=> {
+        setTimeout(() => {
+          if(error){
+            reject('Hubo un error al conectar con nuestro productos')
+          }  else {
+           let prod = productos.find(prod => prod.id === id)
+              resolve(prod)
+        }
+        }, 2000);
+    })
+}
