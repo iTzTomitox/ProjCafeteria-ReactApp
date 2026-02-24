@@ -1,24 +1,25 @@
 import './CartWidget.jsx';
 import CartWidget from './CartWidget.jsx';
 import '../assets/css/NavBar.css';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
     return (
         <nav className="nav-container">
          <img className='logo' src="../logo.png" alt="" />
                         <div className='nav-secciones'>
-                        <a href="">Home</a>
+                        <Link to="/">Home</Link>
                         <div className="dropdown">
-                            <a href="">Cafes</a>
+                            <Link to="/category/Capsula">Cafes</Link>
                             <div className="dropdown-content">
-                                <a href="/cafes/origen">Granos</a>
-                                <a href="/cafes/mezclas">Molido</a>
-                                <a href="/cafes/especiales">Capsulas</a>
+                                <Link to="/category/Granos">Granos</Link>
+                                <Link to="/category/Molido">Molido</Link>
+                                <Link to="/category/Capsula">Capsulas</Link>
                             </div>
                         </div>
-                        <a href="">Metodos</a>
-                        <a href="">Accesorios</a>
-                        <a href="">Kits</a>
+                        <Link to="/metodos">Metodos</Link>
+                        <Link to="/accesorios">Accesorios</Link>
+                        <Link to="/kits">Kits</Link>
                         </div>
             <div className='nav-cart'>
             <CartWidget />

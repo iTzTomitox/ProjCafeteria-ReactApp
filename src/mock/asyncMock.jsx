@@ -1,7 +1,7 @@
 const productos = [
     {
         id:'01',
-        name:'Random 1',
+        name:'Cafe 1',
         descripcion:'Lorem Ipsum',
         stock:20,
         price:25000,
@@ -10,7 +10,7 @@ const productos = [
     },
         {
         id:'02',
-        name:'Random 2',
+        name:'Cafe 2',
         descripcion:'Lorem Ipsum',
         stock:10,
         price:35000,
@@ -18,7 +18,7 @@ const productos = [
         img:''
     }, {
        id:'03',
-        name:'Random 3',
+        name:'Cafe 3',
         descripcion:'Lorem Ipsum',
         stock:10,
         price:35000,
@@ -26,7 +26,7 @@ const productos = [
         img:''
     }, {
        id:'04',
-        name:'Random 4',
+        name:'Cafe 4',
         descripcion:'Lorem Ipsum',
         stock:12,
         price:65000,
@@ -47,6 +47,19 @@ export const getProducts = ()=> {
           }
         }, 2000);
     })
+}
+
+export const getProductById = (id) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const prod = productos.find(p => p.id === id)
+      if(prod){
+        resolve(prod)
+      } else {
+        reject('Producto no encontrado')
+      }
+    }, 800)
+  })
 }
 
 export const getItem = (id)=> {
