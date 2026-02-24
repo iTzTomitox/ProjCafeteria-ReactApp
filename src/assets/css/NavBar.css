@@ -3,11 +3,16 @@
     height: 100px;
 }
 
+nav {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 200px;
+}
+
 .nav-container{
     display:flex;
     align-items:center;
     justify-content:space-between;
-    padding:8px 16px;
 }
 
 .nav-secciones{
@@ -43,6 +48,7 @@
     padding:8px 12px;
     color:#222;
     text-decoration:none;
+    background-color: #000000;
 }
 
 .dropdown-content a:hover{
@@ -69,4 +75,30 @@
     font-size: 0.75rem;
     font-weight: 700;
     line-height: 1;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  a {
+    color: white;
+    text-decoration: none;
+    font-family:"Poppins", sans-serif;
+    }
+
+}
+
+.nav-cart{
+  display: flex;
+  align-items: center;
+  width: 10%;
+}
+
+.nav-secciones{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
 }

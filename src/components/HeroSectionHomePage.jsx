@@ -1,4 +1,5 @@
 import react from 'react'
+import '../assets/css/HeroSection.css'
 
 const HeroSectionHomePage = () => {
     return(

@@ -2,6 +2,9 @@ import './CartWidget.jsx';
 import CartWidget from './CartWidget.jsx';
 import '../assets/css/NavBar.css';
 import { Link } from 'react-router-dom';
+import { GiCoffeeBeans } from "react-icons/gi";
+import { GiCoffeePot } from "react-icons/gi";
+import { SiBuymeacoffee } from "react-icons/si";
 
 const NavBar = () => {
     return (
@@ -12,9 +15,9 @@ const NavBar = () => {
                         <div className="dropdown">
                             <Link to="/category/Capsula">Cafes</Link>
                             <div className="dropdown-content">
-                                <Link to="/category/Granos">Granos</Link>
-                                <Link to="/category/Molido">Molido</Link>
-                                <Link to="/category/Capsula">Capsulas</Link>
+                                <Link to="/category/Granos"><GiCoffeeBeans />Granos</Link>
+                                <Link to="/category/Molido"><GiCoffeePot />Molido</Link>
+                                <Link to="/category/Capsula"><SiBuymeacoffee />Capsulas</Link>
                             </div>
                         </div>
                         <Link to="/metodos">Metodos</Link>

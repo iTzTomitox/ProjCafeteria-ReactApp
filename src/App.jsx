@@ -12,6 +12,7 @@ function App() {
   return (
     <>
       <NavBar />
+      <div className="app-container">
       <HeroSectionHomePage />
       <Routes>
         <Route path="/" element={<ItemListContainer/>} />
@@ -22,6 +23,7 @@ function App() {
         <Route path="/kits" element={<div style={{padding:16}}><h2>Kits</h2></div>} />
         <Route path="*" element={<NotFound/>} />
       </Routes>
+      </div>
       <Footer/>
     </>
   )

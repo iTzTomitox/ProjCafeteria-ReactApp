@@ -43,6 +43,7 @@
 .item-title{
   margin:0;
   font-size:1.05rem;
+  font-family: Poppins, sans-serif ;
 }
 
 
@@ -51,4 +52,21 @@
   justify-content:space-between;
   align-items:center;
   font-weight:600;
+}
+
+.item-button{
+  background-color:#222;
+  color:#fff;
+  border:none;
+  padding:6px 12px;
+  border-radius:4px;
+  cursor:pointer;
+  transition:background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap:8px;
+}
+
+.item-price {
+    font-family: poppins, sans-serif;
 }
