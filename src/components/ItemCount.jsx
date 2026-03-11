@@ -1,7 +1,9 @@
-import react from "react";
+import React from "react";
 
 const ItemCount = () => {
-    return(
-        <div></div>)}
+    return (
+        <div></div>
+    );
+};
 
-        export default ItemCount
+export default ItemCount;
