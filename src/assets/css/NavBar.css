@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -15,15 +16,118 @@
     text-decoration: none;
 }
 
+=======
+>>>>>>> 3007cb80d91d77181b7c9c675964b147a4c3a611
 .logo {
     width: 100px;
     height: 100px;
 }
 
+<<<<<<< HEAD
 .nav-left {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
     width: 500px;
+=======
+nav {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 200px;
+}
+
+.nav-container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.nav-secciones{
+    display:flex;
+    gap:16px;
+    align-items:center;
+}
+
+.nav-secciones a{
+    text-decoration:none;
+    color:#ffffff;
+    padding:6px 8px;
+}
+
+.dropdown{
+    position:relative;
+}
+
+.dropdown-content{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#fff;
+    min-width:160px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.1);
+    border-radius:4px;
+    z-index:10;
+}
+
+.dropdown-content a{
+    display:block;
+    padding:8px 12px;
+    color:#222;
+    text-decoration:none;
+    background-color: #000000;
+}
+
+.dropdown-content a:hover{
+    background:#f2f2f2;
+}
+
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+.cart{
+    color: white;
+    position: relative;
+}
+
+.cart-count{
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    background: red;
+    color: #fff;
+    border-radius: 999px;
+    padding: 2px 6px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  a {
+    color: white;
+    text-decoration: none;
+    font-family:"Poppins", sans-serif;
+    }
+
+}
+
+.nav-cart{
+  display: flex;
+  align-items: center;
+  width: 10%;
+}
+
+.nav-secciones{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+>>>>>>> 3007cb80d91d77181b7c9c675964b147a4c3a611
 }
