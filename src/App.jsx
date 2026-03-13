@@ -9,7 +9,7 @@ import { Routes, Route } from 'react-router-dom';
 import HeroSectionHomePage from './components/HeroSectionHomePage.jsx';
 
 function App() {
-  return (
+  return ( 
     <>
       <NavBar />
       <div className="app-container">
@@ -18,9 +18,6 @@ function App() {
           <Route path="/" element={<ItemListContainer />} />
           <Route path="/category/:categoryId" element={<ItemListContainer />} />
           <Route path="/item/:id" element={<ItemDetailContainer />} />
-          <Route path="/metodos" element={<div style={{padding:16}}><h2>Métodos</h2></div>} />
-          <Route path="/accesorios" element={<div style={{padding:16}}><h2>Accesorios</h2></div>} />
-          <Route path="/kits" element={<div style={{padding:16}}><h2>Kits</h2></div>} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

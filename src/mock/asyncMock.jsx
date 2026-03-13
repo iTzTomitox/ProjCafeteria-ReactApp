@@ -6,7 +6,7 @@ const productos = [
         stock:20,
         price:25000,
         category: 'Granos',
-        img:''
+        img:'https://i.postimg.cc/MpPngGHM/imagen-2026-03-12-221141089.png'
     },
         {
         id:'02',
@@ -15,7 +15,7 @@ const productos = [
         stock:20,
         price:25000,
         category: 'Granos',
-        img:''
+        img:'https://i.postimg.cc/nhzzKtk6/imagen-2026-03-12-221317367.png'
     },
         {
         id:'03',
@@ -24,7 +24,7 @@ const productos = [
         stock:10,
         price:35000,
         category: 'Granos',
-        img:''
+        img:'https://i.postimg.cc/Dz1KLC9n/imagen-2026-03-12-221505893.png'
     }, {
        id:'04',
         name:'Brasil Cerrado: "Terruño de Cacao"',
@@ -32,7 +32,7 @@ const productos = [
         stock:10,
         price:35000,
         category: 'Granos',
-        img:''
+        img:'https://i.postimg.cc/h42RLQ5D/imagen-2026-03-12-221614722.png'
     }, {
        id:'05',
         name:'Guatemala Huehuetenango: "Sombras del Volcán"',
@@ -40,7 +40,7 @@ const productos = [
         stock:12,
         price:65000,
         category: 'Granos',
-        img:''
+        img:'https://i.postimg.cc/CxxqH1HN/imagen-2026-03-13-084754170.png'
     }, {
        id:'06',
         name:'Kenia AA: "Vibranza Vinosa"',
@@ -48,7 +48,7 @@ const productos = [
         stock:12,
         price:65000,
         category: 'Granos',
-        img:''
+        img:'https://i.postimg.cc/tTWZCVpH/imagen-2026-03-13-084818376.png'
     } , {
        id:'07',
         name:'Costa Rica Tarrazú: "Dulzura de Miel"',
@@ -56,7 +56,7 @@ const productos = [
         stock:12,
         price:65000,
         category: 'Granos',
-        img:''
+        img:'https://i.postimg.cc/L8Js8Z3G/imagen-2026-03-13-084904235.png'
     }  , {
        id:'08',
         name:'Nicaragua Segovia: "Cacao y Canela"',
@@ -64,7 +64,7 @@ const productos = [
         stock:12,
         price:65000,
         category: 'Granos',
-        img:''
+        img:'https://i.postimg.cc/tTkb5Xz3/imagen-2026-03-13-085009931.png'
     }  , {
        id:'09',
         name:'Blend Don Ramón: "El Clásico de la Casa"',
@@ -72,7 +72,7 @@ const productos = [
         stock:12,
         price:65000,
         category: 'Molido',
-        img:''
+        img:'https://i.postimg.cc/cL3Nz7m0/imagen-2026-03-13-085043215.png'
     }   , {
        id:'10',
         name:'Blend Despertar: "Intensidad y Energía"',
@@ -80,7 +80,7 @@ const productos = [
         stock:12,
         price:65000,
         category: 'Molido',
-        img:''
+        img:'https://i.postimg.cc/bvjjfGCQ/imagen-2026-03-13-085047561.png'
     }    , {
        id:'11',
         name:'Blend Atardecer: "Armonía y Fruta"',
@@ -88,7 +88,7 @@ const productos = [
         stock:12,
         price:65000,
         category: 'Molido',
-        img:''
+        img:'https://i.postimg.cc/X7yhNjC4/imagen-2026-03-13-085152395.png'
     }    , {
        id:'12',
         name:'Selección Orgánica: "Puro Perú"',
@@ -96,7 +96,7 @@ const productos = [
         stock:12,
         price:65000,
         category: 'Molido',
-        img:''
+        img:'https://i.postimg.cc/mgfntvY9/imagen-2026-03-13-085156884.png'
     }    , {
        id:'13',
         name:'Moka Italiano: "Herencia Napolitana"',
@@ -104,7 +104,7 @@ const productos = [
         stock:12,
         price:65000,
         category: 'Molido',
-        img:''
+        img:'https://i.postimg.cc/KYgrBjmZ/imagen-2026-03-13-085533008.png'
     }    , {
        id:'14',
         name:'Descafeinado Premium: "Noche de Paz"',
@@ -112,7 +112,7 @@ const productos = [
         stock:12,
         price:65000,
         category: 'Molido',
-        img:''
+        img:'https://i.postimg.cc/JnNNYFyX/imagen-2026-03-13-085538226.png'
     }    , {
        id:'15',
         name:'Cápsula "Ristretto Imperial" (Intensidad 13)',
@@ -120,7 +120,7 @@ const productos = [
         stock:12,
         price:65000,
         category: 'Capsula',
-        img:''
+        img:'https://i.postimg.cc/PxjZDM6f/imagen-2026-03-13-085611336.png'
     }    , {
        id:'16',
         name:'Cápsula "Arpeggio Cremoso" (Intensidad 9)',
@@ -128,7 +128,7 @@ const productos = [
         stock:12,
         price:65000,
         category: 'Capsula',
-        img:''
+        img:'https://i.postimg.cc/QtJ7JWwL/imagen-2026-03-13-085618882.png'
     }    , {
        id:'17',
         name:'Cápsula "Etiopía Elegance" (Intensidad 4)',
@@ -136,7 +136,7 @@ const productos = [
         stock:12,
         price:65000,
         category: 'Capsula',
-        img:''
+        img:'https://i.postimg.cc/k4sVbP6w/imagen-2026-03-13-085657168.png'
     }    , {
        id:'18',
         name:'Cápsula "Lungo Andino" (Intensidad 7)',
@@ -144,7 +144,7 @@ const productos = [
         stock:12,
         price:65000,
         category: 'Capsula',
-        img:''
+        img:'https://i.postimg.cc/SRKnL1cF/imagen-2026-03-13-085701652.png'
     }  , {
        id:'19',
         name:'Cápsula "Decaf Dolce" (Intensidad 6)',
@@ -152,7 +152,7 @@ const productos = [
         stock:12,
         price:65000,
         category: 'Capsula',
-        img:''
+        img:'https://i.postimg.cc/HLCjvkbt/imagen-2026-03-13-085726596.png'
     }, {
        id:'20',
         name:'Cápsula "Vainilla Bourbon" (Infusionada)',
@@ -160,7 +160,7 @@ const productos = [
         stock:12,
         price:65000,
         category: 'Capsula',
-        img:''
+        img:'https://i.postimg.cc/LsMhQ8z2/imagen-2026-03-13-085731286.png'
     }    
 ]
 

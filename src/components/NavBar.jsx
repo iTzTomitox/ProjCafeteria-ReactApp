@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/css/NavBar.css';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import CartWidget from './CartWidget.jsx';
 import { GiCoffeeBeans, GiCoffeePot } from "react-icons/gi";
 import { SiBuymeacoffee } from "react-icons/si";
@@ -10,18 +10,18 @@ const NavBar = () => {
         <nav className="nav-container">
             <img className='logo' src="../logo.png" alt="" />
             <div className='nav-secciones'>
-                <Link to="/">Home</Link>
+                <NavLink to="/">Home</NavLink>
                 <div className="dropdown">
-                    <Link to="/category/Capsula">Cafes</Link>
+                    <NavLink to="/category/Capsula">Cafes</NavLink>
                     <div className="dropdown-content">
-                        <Link to="/category/Granos"><GiCoffeeBeans />Granos</Link>
-                        <Link to="/category/Molido"><GiCoffeePot />Molido</Link>
-                        <Link to="/category/Capsula"><SiBuymeacoffee />Capsulas</Link>
+                        <NavLink to="/category/Granos"><GiCoffeeBeans />Granos</NavLink>
+                        <NavLink to="/category/Molido"><GiCoffeePot />Molido</NavLink>
+                        <NavLink to="/category/Capsula"><SiBuymeacoffee />Capsulas</NavLink>
                     </div>
                 </div>
-                <Link to="/metodos">Metodos</Link>
-                <Link to="/accesorios">Accesorios</Link>
-                <Link to="/kits">Kits</Link>
+                <NavLink to="/metodos">Metodos</NavLink>
+                <NavLink to="/accesorios">Accesorios</NavLink>
+                <NavLink to="/kits">Kits</NavLink>
             </div>
             <div className='nav-cart'>
                 <CartWidget />
