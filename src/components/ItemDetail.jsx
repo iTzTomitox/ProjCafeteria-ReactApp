@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import '../assets/css/Item.css';
+import { useContext } from 'react';
+import { CartContext } from '../context/CartContext.jsx';
 
 const ItemDetail = ({ product }) => {
   const { name, descripcion, price, stock, img, category } = product;
   const [qty, setQty] = useState(1);
+  const { cart, setCart } = useContext(CartContext);
 
   const increase = () => setQty((q) => Math.min(q + 1, stock));
   const decrease = () => setQty((q) => Math.max(1, q - 1));
