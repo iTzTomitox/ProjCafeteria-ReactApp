@@ -1,17 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import '../assets/css/Item.css';
-import { useContext } from 'react';
-import { CartContext } from '../context/CartContext.jsx';
+import ItemCount from "./ItemCount";
+import { useContext } from "react";
+import { CartContext } from "../context/CartContext";
+
 
 const ItemDetail = ({ product }) => {
+  const { cart, addToCart } = useContext(CartContext);
   const { name, descripcion, price, stock, img, category } = product;
-  const [qty, setQty] = useState(1);
-  const { cart, setCart } = useContext(CartContext);
 
-  const increase = () => setQty((q) => Math.min(q + 1, stock));
-  const decrease = () => setQty((q) => Math.max(1, q - 1));
-
-  const addToCart = () => {
+  const handleAddToCart = (qty) => {
     console.log(`Agregar ${qty} unidades de ${name} al carrito`);
     alert(`Agregar ${qty} unidades de ${name} (simulado)`);
   };
@@ -29,12 +27,7 @@ const ItemDetail = ({ product }) => {
           <p><strong>Precio:</strong> ${price}</p>
           <p><strong>Stock:</strong> {stock}</p>
 
-          <div style={{display:'flex',alignItems:'center',gap:8,marginTop:12}}>
-            <button onClick={decrease}>-</button>
-            <span>{qty}</span>
-            <button onClick={increase}>+</button>
-            <button onClick={addToCart} style={{marginLeft:12}}>Agregar al carrito</button>
-          </div>
+          <ItemCount stock={stock} initial={1} onAdd={handleAddToCart} />
         </div>
       </div>
     </div>
