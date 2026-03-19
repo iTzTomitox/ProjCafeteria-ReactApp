@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { getProductById } from "../mock/asyncMock";
 import ItemDetail from "./ItemDetail";
+import Loader from "./Loader";
 
 const ItemDetailContainer = () => {
   const { id } = useParams();
@@ -20,7 +21,8 @@ const ItemDetailContainer = () => {
   if (loading) return <div>Cargando...</div>;
   if (error) return <div>Error: {String(error)}</div>;
 
-  return <ItemDetail product={product} />;
+  return <div> {
+    loading ? <Loader text={product.name ? "Cargando Producto" : "Cargando..."} /> : <ItemDetail product={product} />}</div>;
 };
 
 export default ItemDetailContainer;

@@ -8,6 +8,7 @@ import NotFound from './components/NotFound.jsx';
 import { Routes, Route } from 'react-router-dom';
 import HeroSectionHomePage from './components/HeroSectionHomePage.jsx';
 import { CartProvider } from './context/CartContext.jsx';
+import CartContainer from './components/CartContainer.jsx';
 
 function App() {
   return ( 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/" element={<ItemListContainer />} />
           <Route path="/category/:categoryId" element={<ItemListContainer />} />
           <Route path="/item/:id" element={<ItemDetailContainer />} />
+          <Route path="/cart" element={<CartContainer />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

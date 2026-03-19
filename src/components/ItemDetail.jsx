@@ -3,15 +3,18 @@ import '../assets/css/Item.css';
 import ItemCount from "./ItemCount";
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
-
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const ItemDetail = ({ product }) => {
+  const [purchaseQty, setPurchaseQty] = useState(false);
   const { cart, addToCart } = useContext(CartContext);
   const { name, descripcion, price, stock, img, category } = product;
 
   const handleAddToCart = (qty) => {
     console.log(`Agregar ${qty} unidades de ${name} al carrito`);
     alert(`Agregar ${qty} unidades de ${name} (simulado)`);
+    setPurchaseQty(true);
   };
 
   return (
@@ -27,7 +30,7 @@ const ItemDetail = ({ product }) => {
           <p><strong>Precio:</strong> ${price}</p>
           <p><strong>Stock:</strong> {stock}</p>
 
-          <ItemCount stock={stock} initial={1} onAdd={handleAddToCart} />
+          { purchaseQty ? <Link to="/cart">Ver Carrito</Link> : <ItemCount stock={stock} initial={1} onAdd={handleAddToCart} /> }
         </div>
       </div>
     </div>
