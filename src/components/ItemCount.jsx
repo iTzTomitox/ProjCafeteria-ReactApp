@@ -13,7 +13,13 @@ const ItemCount = ({ stock = 0, initial = 1, onAdd }) => {
   };
 
   return (
-    <div style={{ display: "flex", alignItems: "center", gap: 8, marginTop: 12 }}>
+    <>
+    {
+      stock === 0 
+      ?
+        <p>No hay stock disponible</p>
+      :
+          <div style={{ display: "flex", alignItems: "center", gap: 8, marginTop: 12 }}>
       <button onClick={decrease} disabled={qty <= 1}>
         -
       </button>
@@ -25,6 +31,9 @@ const ItemCount = ({ stock = 0, initial = 1, onAdd }) => {
         Agregar al carrito
       </button>
     </div>
+    }
+    </>
+
   );
 };
 

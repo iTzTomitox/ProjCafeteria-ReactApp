@@ -21,8 +21,17 @@ const ItemDetailContainer = () => {
   if (loading) return <div>Cargando...</div>;
   if (error) return <div>Error: {String(error)}</div>;
 
-  return <div> {
-    loading ? <Loader text={product.name ? "Cargando Producto" : "Cargando..."} /> : <ItemDetail product={product} />}</div>;
+  return (
+    <>
+      {loading ? (
+        <Loader text={product?.name ? "Cargando Producto" : "Cargando..."} />
+      ) : (
+        <div>
+          <ItemDetail product={product} />
+        </div>
+      )}
+    </>
+  );
 };
 
 export default ItemDetailContainer;
