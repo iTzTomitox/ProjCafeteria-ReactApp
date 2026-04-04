@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { getProducts } from "../mock/asyncMock";
 import ItemList from "./ItemList";
 import Loader from "./Loader";
-import { collection, getDocs, query, where } from "firebase/firestore";
+import { addDoc, collection, getDocs, query, where } from "firebase/firestore";
 import { db } from "../service/firebase";
 
 const ItemListContainer = (props) => {
