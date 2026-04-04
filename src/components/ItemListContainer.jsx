@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { getProducts } from "../mock/asyncMock";
 import ItemList from "./ItemList";
 import Loader from "./Loader";
+import CategoryHeroSection from "./CategoryHeroSection";
 import { addDoc, collection, getDocs, query, where } from "firebase/firestore";
 import { db } from "../service/firebase";
 
@@ -27,6 +28,7 @@ const ItemListContainer = (props) => {
 
 return (
     <>
+        {categoryId && <CategoryHeroSection categoryId={categoryId} />}
         {
             loading ? <Loader text={categoryId ? 'Cargando Categoria' : 'Cargando Productos'} /> : <div>
                 {mensaje && <h1>{mensaje}</h1>}
