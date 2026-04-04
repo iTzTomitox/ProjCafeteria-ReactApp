@@ -195,7 +195,7 @@ const CheckOut = () => {
                                     disabled={loading}
                                     onClick={handleSubmit(onSubmit)}
                                 >
-                                    {loading ? 'Procesando...' : 'Proceder al Pago'}
+                                    {loading ? 'Procesando Pago...' : 'Proceder al Pago'}
                                 </button>
                             </div>
                         </div>
