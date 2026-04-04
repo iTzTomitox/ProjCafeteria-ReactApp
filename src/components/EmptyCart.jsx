@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const EmptyCart = () => {
     return (
@@ -10,4 +11,4 @@ const EmptyCart = () => {
     );
 }
 
-export default EmptyCart;
+export default EmptyCart; 

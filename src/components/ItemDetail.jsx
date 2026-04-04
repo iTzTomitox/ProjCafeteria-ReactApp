@@ -12,8 +12,7 @@ const ItemDetail = ({ product }) => {
   const { name, descripcion, price, stock, img, category } = product;
 
   const handleAddToCart = (qty) => {
-    console.log(`Agregar ${qty} unidades de ${name} al carrito`);
-    alert(`Agregar ${qty} unidades de ${name} (simulado)`);
+    addToCart(product, qty);
     setPurchaseQty(true);
   };
 
