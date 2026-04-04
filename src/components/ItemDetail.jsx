@@ -5,6 +5,7 @@ import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import toast from 'react-hot-toast';
 
 const ItemDetail = ({ product }) => {
   const [purchaseQty, setPurchaseQty] = useState(false);
@@ -13,6 +14,7 @@ const ItemDetail = ({ product }) => {
 
   const handleAddToCart = (qty) => {
     addToCart(product, qty);
+    toast.success(`${qty} ${name} agregado al carrito`);
     setPurchaseQty(true);
   };
 

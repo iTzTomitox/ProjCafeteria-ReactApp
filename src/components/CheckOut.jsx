@@ -8,6 +8,7 @@ import { db } from '../service/firebase';
 import { Link } from 'react-router-dom';
 import EmptyCart from './EmptyCart';
 import { useForm } from 'react-hook-form';
+import toast from 'react-hot-toast';
 
 
 const CheckOut = () => {
@@ -37,12 +38,12 @@ const CheckOut = () => {
         addDoc(orderColl, orden)
             .then((res) => {
                 setOrderId(res.id);
-                alert('Compra realizada con éxito, tu número de orden es: ' + res.id);
+                toast.success(`¡Compra realizada! Orden: ${res.id}`);
                 clearCart();
             })
             .catch((err) => {
                 console.log(err);
-                alert('Error al procesar la compra: ' + err.message);
+                toast.error(`Error: ${err.message}`);
             })
             .finally(() => {
                 setLoading(false);

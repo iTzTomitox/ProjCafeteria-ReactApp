@@ -10,11 +10,13 @@ import HeroSectionHomePage from './components/HeroSectionHomePage.jsx';
 import { CartProvider } from './context/CartContext.jsx';
 import CartContainer from './components/CartContainer.jsx';
 import CheckOut from './components/CheckOut.jsx';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   return ( 
     <>
     <CartProvider>
+      <Toaster position="top-right" />
       <NavBar />
       <div className="app-container">
         <HeroSectionHomePage />
