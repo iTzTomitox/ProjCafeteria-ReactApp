@@ -61,8 +61,8 @@ antemano hace que el CSS sea una traducción y no una improvisación.
 
 ## Datos
 
-- **JSON local** para [el catálogo de productos]
-- **Firebase / Firestore** para [las órdenes de compra]
+- **JSON local** para el catálogo de productos
+- **Firebase / Firestore** para las órdenes de compra
 
 ---
 
